@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Carousel Component</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: #343a40;
+            line-height: 1;
+        }
+
+        img {
+            height: 200px;
+            border-radius: 8px;
+            transform: scale(1.5);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        .carousel {
+            margin: 100px auto;
+            background-color: #087f5b;
+            width: 800px;
+            padding: 32px 48px 32px 86px;
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 86px;
+            position: relative;
+        }
+
+        .testmonial-text {
+            font-size: 18px;
+            font-weight: 500px;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            color: #e6fcf5;
+        }
+
+        .testmonial-Author {
+            font-size: 14px;
+            margin-bottom: 4px;
+            color: #c3fae8;
+        }
+
+        .testmonial-job {
+            font-size: 12px;
+            color: #c3fae8;
+        }
+
+        .btn {
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            border: none;
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-weight: 500px;
+        }
+
+        .btn-icon {
+            width: 24px;
+            height: 24px;
+            stroke: #087f5b;
+        }
+
+        .btn--left {
+            left: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .btn--right {
+            right: 0;
+            top: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .dots {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 32px);
+            display: flex;
+            gap: 12px;
+        }
+
+        .dots .dot--fill {
+            background-color: #087f5b;
+        }
+
+        .dot {
+            background-color: #fff;
+            border: 2px solid #087f5b;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <img src="maria.jpg" alt="Maria da Alminda">
+        <blockquote>
+            <p class="testmonial-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia nesciunt
+                aliquid ex atque quibusdam.
+                Rerum officia unde suscipit quo sunt hic illo fugit."</p>
+            <p class="testmonial-Author">Maria de Almeida</p>
+            <p class="testmonial-job">Senior Product Manager at EDP Comercial</p>
+        </blockquote>
+        <button class=" btn btn--left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+        <button class="btn btn--right ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+        <div class="dots">
+            <button class="dot dot--fill">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+        </div>
+    </div>
+</body>
+
+</html>

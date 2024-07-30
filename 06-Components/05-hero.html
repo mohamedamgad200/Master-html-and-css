@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omifood Hero Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-family: "Rubik", sans-serif;
+            color: #444;
+        }
+
+        nav {
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 32px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 48px;
+        }
+
+        a:visited,
+        a:link {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #e67e22;
+            color: #fff;
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 9px;
+        }
+
+        h2 {
+            font-size: 44px;
+            margin-bottom: 49px;
+        }
+
+        section {
+            padding: 96px 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        .header-container {
+            width: 1200px;
+            position: absolute;
+            /* In relation to PARENT size */
+            top: 50%;
+            left: 50%;
+            /* In relation to ELEMENT size */
+            transform: translate(-50%, -50%);
+        }
+
+        header {
+            background-image:
+                linear-gradient(rgba(34, 34, 34, 0.6),
+                    rgba(34, 34, 34, 0.6)),
+                url(hero.jpg);
+            color: #fff;
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            padding-top: 32px;
+        }
+
+        .content {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="container">
+            <div class="logo">
+                logo
+            </div>
+            <div class="navigation">
+                navigation
+            </div>
+        </nav>
+        <div class="header-container">
+            <div class="content">
+                <h1>A healty meal delivered to your door, every single days</h1>
+                <p>The smart 365-days-per-year food subscription that will make you eat healty algain. Tailored to your
+                    personal tastes and nutritional needs</p>
+                <a href="#" class="main--btn">start eating well</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h1>Some random heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quas, minus beatae sapiente debitis
+                voluptatum, laudantium veritatis impedit corrupti officia recusandae fugit, voluptates iure velit! Ad
+                suscipit vitae nobis optio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sequi
+                quam earum voluptas eum laboriosam at cupiditate debitis in odio adipisci repudiandae enim ea, sint quos
+                similique! Debitis, facilis dolore?</p>
+        </div>
+    </section>
+</body>
+
+</html>
